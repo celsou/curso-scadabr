@@ -2,8 +2,8 @@
 title:               Curso ScadaBR 1.2
 tagline:             'Por Celso Automação'
 description:         'Curso completo e gratuito de ScadaBR em português.<br>Desenvolvido por <a href="https://celsoautomacao.com.br" target="_blank">Celso Automação</a>.'
-url:                 https://celsoautomacao.com.br
-baseurl:             ''
+url:                 'https://celsoautomacao.com.br'
+baseurl:             '/curso-scadabr'
 paginate:            5
 permalink:           pretty
 
