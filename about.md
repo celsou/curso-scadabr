@@ -1,29 +1,15 @@
 ---
 layout: page
-title: About
+title: 'Sobre este curso'
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+<img id="site-banner" alt="Logo do site Curso ScadaBR 1.2 por Celso Atomação" src="{{ '/public/site-banner.png' | absolute_url }}">
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+<div class="message">
+    <p style="text-align: justify;">Bem-vindo ao Curso ScadaBR 1.2 do canal Celso Automação. Este é o melhor e mais completo curso gratuito sobre ScadaBR disponível em português. Neste site você pode assistir a todas as aulas do curso gratuitamente e ter acesso a material complementar exclusivo para facilitar os seus estudos.</p>    
+</div>
+  
+<p><a href="{{ site.baseurl }}/#lista-de-aulas">Clique aqui para ver a lista de todas as aulas já publicadas</a></p>
 
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+## Créditos
+Este curso foi desenvolvido por Celso Dell Anhol Ubaldo. Visite [celsoautomacao.com.br](https://celsoautomacao.com.br).

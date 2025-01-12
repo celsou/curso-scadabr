@@ -28,4 +28,4 @@ published: true
 
 <br>
 ## Material complementar
-<i>Esta aula não possui material complementar disponível.</i>
+<a href="{{ '/uploads/Slides Data Sources.pdf' | absolute_url }}" download>Clique para baixar a os slides desta aula (arquivo PDF)</a>

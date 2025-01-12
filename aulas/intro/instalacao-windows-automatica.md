@@ -26,4 +26,7 @@ published: true
 
 <br>
 ## Material complementar
-<i>Esta aula não possui material complementar disponível.</i>
+<ul>
+	<li><a href="https://adoptium.net/temurin/releases/?os=windows&version=8" target="_blank">Link para download do OpenJDK</a></li>
+	<li><a href="https://github.com/ScadaBR/ScadaBR/releases/tag/v1.2" target="_blank">Link para download do ScadaBR 1.2</a></li>
+</ul>

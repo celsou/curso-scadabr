@@ -28,6 +28,12 @@ published: true
 
 <br>
 ## Material complementar
+<ul>
+	<li><a href="https://adoptium.net/temurin/releases/?os=windows&version=8" target="_blank">Link para download do OpenJDK</a></li>
+	<li><a href="https://tomcat.apache.org/download-90.cgi" target="_blank">Link para download do Apache Tomcat 9</a></li>
+	<li><a href="https://github.com/ScadaBR/ScadaBR/releases/tag/v1.2" target="_blank">Link para download do ScadaBR 1.2</a></li>
+</ul>
+
 Para configurar a acentuação de caracteres em português, você deve inserir as seguintes linhas na configuração da sua Máquina Virtual Java:
 
 {% highlight plain %}

@@ -28,4 +28,7 @@ published: true
 
 <br>
 ## Material complementar
-<i>Esta aula não possui material complementar disponível.</i>
+<ul>
+	<li><a href="https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html" target="_blank">Documentação classe DecimalFormat (Java SE 7)</a></li>
+	<li><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html" target="_blank">Documentação classe SimpleDateFormat (Java SE 7)</a></li>
+</ul>

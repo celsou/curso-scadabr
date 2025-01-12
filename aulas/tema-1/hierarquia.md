@@ -4,7 +4,7 @@ title: "Hierarquia de data points"
 aula: true
 tema: "Comunicação"
 post_index: 1.6
-published: false
+published: true
 ---
 
 ## Resumo da aula
@@ -22,7 +22,7 @@ published: false
 ## Conteúdo da aula (vídeo)
 
 <div class="iframe-container ratio-16_9">
-	<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<iframe src="https://youtube.com/embed/1k-KJt3GfDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <br>
