@@ -1,3 +1,5 @@
+### The following license refers only to the Lanyon theme for Jekyll. The content of "Curso ScadaBR" is not covered by the MIT license.
+
 # Released under MIT License
 
 Copyright (c) 2014 Mark Otto.
