@@ -44,7 +44,7 @@ title: Home
       {% if page.aula == true %}
         <tr>
           <td>Aula {{page.post_index}}</td>
-          <td><a href="{{page.url}}">{{page.title}}</a></td>
+          <td><a href="{{page.url | relative_url}}">{{page.title}}</a></td>
           <td>{{page.tema}}</td>
         </tr>
       {% endif %}

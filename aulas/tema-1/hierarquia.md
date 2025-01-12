@@ -4,7 +4,7 @@ title: "Hierarquia de data points"
 aula: true
 tema: "Comunicação"
 post_index: 1.6
-published: true
+published: false
 ---
 
 ## Resumo da aula
