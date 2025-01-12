@@ -3,7 +3,16 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
+  
+  {% if page.title == "Home" %}
+    <meta property="og:title" content="Curso ScadaBR 1.2 - Celso Automação">
+    <meta property="og:site_name" content="Curso ScadaBR 1.2">
+    <meta property="og:url" content="https://celsoautomacao.com.br/curso-scadabr">
+    <meta property="og:description" content="Curso completo sobre ScadaBR 1.2. Aprenda a utilizar este poderoso software de supervisão e controle de processos com o melhor curso gratuito disponível em português.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://celsoautomacao.com.br/curso-scadabr/public/site-banner-og.png">
+  {% endif %}
+  
   <title>
     {% if page.title == "Home" %}
       Curso ScadaBR 1.2 - Online e gratuito
