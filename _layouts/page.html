@@ -20,7 +20,7 @@ layout: default
     <!-- Página anterior -->
     {% if aula.post_index == page.post_index and forloop.first == false %}
       {% assign older_index = forloop.index0 | minus: 1 %}
-      <a class="pagination-item older" href="{{ aulas[older_index].url }}">Aula anterior</a>
+      <a class="pagination-item older" href="{{ aulas[older_index].url | relative_url }}">Aula anterior</a>
     {% elsif aula.post_index == page.post_index and forloop.first == true %}
       <span class="pagination-item older">Aula anterior</span>
     {% endif %}
@@ -28,7 +28,7 @@ layout: default
     <!-- Próxima página -->
     {% if aula.post_index == page.post_index and forloop.last == false %}
       {% assign newer_index = forloop.index0 | plus: 1 %}
-      <a class="pagination-item newer" href="{{ aulas[newer_index].url }}">Próxima aula</a>
+      <a class="pagination-item newer" href="{{ aulas[newer_index].url | relative_url }}">Próxima aula</a>
     {% elsif aula.post_index == page.post_index and forloop.last == true %}
       <span class="pagination-item newer">Próxima aula</span>
     {% endif %}
