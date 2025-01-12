@@ -1,0 +1,114 @@
+---
+layout: default
+title: Home
+---
+
+<!-- <div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    Conteúdo Here
+  </div>
+  {% endfor %} -->
+
+  <h1 class="post-title">Curso completo de ScadaBR</h1>
+  <img id="site-banner" alt="Logo do site Curso ScadaBR 1.2 por Celso Atomação" src="{{ '/public/site-banner.png' | absolute_url }}">
+  
+  <div class="message">
+    <p style="text-align: justify;">Bem-vindo ao Curso ScadaBR 1.2 do canal Celso Automação. Este é o melhor e mais completo curso gratuito sobre ScadaBR disponível em português. Neste site você pode assistir a todas as aulas do curso gratuitamente e ter acesso a material complementar exclusivo para facilitar os seus estudos.</p>    
+  </div>
+  <p><a href="#lista-de-aulas">Clique aqui para ver a lista de todas as aulas já publicadas</a></p>
+
+  <br>
+
+  <h2 id="lista-de-aulas">Lista de Aulas</h2>        
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Título</th>
+        <th>Tema</th>        
+      </tr>
+    </thead>
+    <tbody>
+      
+      {% assign aulas = site.pages | where: "aula", true | sort: "post_index" %}
+      {% for page in aulas %}
+      {% if page.aula == true %}
+        <tr>
+          <td>Aula {{page.post_index}}</td>
+          <td><a href="{{page.url}}">{{page.title}}</a></td>
+          <td>{{page.tema}}</td>
+        </tr>
+      {% endif %}
+      {% endfor %}
+    
+    </tbody>
+  </table>
+
+  <br>
+
+  <h2 id="faq">Perguntas frequentes</h2>
+  <section class="faq">
+    <div>
+      <h4>O que é o ScadaBR?</h4> 
+      <p>O ScadaBR é um software livre o open-source para criação de sistemas supervisórios do tipo SCADA (Supervisory Control and Data Acquisiton). Ele foi desenvolvido por uma comunidade brasileira e pode ser baixado pelo site <a href="https://scadabr.com.br" target="_blank">scadabr.com.br</a></a></p>
+    </div>
+    
+    <div>
+      <h4>O que é o Curso ScadaBR 1.2 do canal Celso Automação?</h4>
+      <p>O Curso ScadaBR 1.2 é um curso gratuito e completo sobre o software ScadaBR em sua versão mais recente (1.2). Este curso aborda de forma didática os recursos do ScadaBR, como instalá-lo e utilizá-lo.</p>
+    </div>
+    
+    <div>
+      <h4>Quanto custa o Curso ScadaBR 1.2?</h4>
+      <p>O Curso ScadaBR 1.2 é completamente gratuito, estando as aulas disponíveis neste site e no canal do YouTube <a href="https://m.youtube.com/@celso.automacao" target="_blank">Celso Automação</a>.</p>
+    </div>
+    
+    <div>
+      <h4>Este curso serve para o Scada-LTS?</h4>
+      <p><b>Na maioria dos casos, sim.</b> Embora o foco deste curso seja o ScadaBR, como a interface clássica do Scada-LTS é praticamente idêntica e ambos são projetos irmãos, a maioria dos conteúdos deste curso podem ser aplicados ao Scada-LTS.</p>
+    </div>
+    
+    <div>
+      <h4>Qual a diferença entre ScadaBR e Scada-LTS?</h4>
+      <p>O Scada-LTS surgiu como uma ramificação <i>(fork)</i> do ScadaBR, visando trazer novos recursos e acelerar o desenvolvimento do software. Enquanto o ScadaBR possui desenvolvimento mais lento e está limitado (atualmente) à comunidade brasileira, o Scada-LTS é um projeto internacional, com novas versões sendo lançadas com frequência. Ambos os projetos são maduros e podem ser utilizados em ambientes de produção.</p>
+    </div>
+    
+    <div>
+      <h4>Este curso possui certificado de conclusão?</h4>
+      <p><b>Não,</b> como o foco deste curso não é comercial, não oferecemos certificados de conclusão.</p>
+    </div>
+    
+    <div>
+      <h4>Este curso é voltado à formação de integradores do ScadaBR?</h4>
+      <p><b>Não.</b> Este é um curso focado em dar uma visão geral sobre os recursos do software ScadaBR, <b>não sendo voltado a formar profissionais integradores do ScadaBR.</b></p>
+      <p>Se você precisa aprender a utilizar o ScadaBR para uso profissional, e tornar-se um integrador certificado, confira <a href="https://www.scadabr.com.br/curso-scadabr/" target="_blank">o curso oficial de ScadaBR/Scada-LTS</a></a> .</p>
+    </div>
+    
+    <div>
+      <h4>Como posso utilizar as informações deste curso?</h4>
+      <p>Você pode compartilhar os vídeos e materiais disponíveis neste site, desde que mantidas as referências ao(s) autor(es) original(is). Caso você produza material baseado nas informações deste curso, por favor, não esqueça de dar os devidos créditos a Celso Dell Anhol Ubaldo e ao site <a href="https://celsoautomacao.com.br">celsoautomacao.com.br</a>.</p>
+      <p>Neste site, quando um material complementar for de autoria de terceiros ou possuir licença de uso específica, isto será indicado explicitamente no respectivo arquivo.</p>
+    </div>
+  </section>
+
+  <br>
+
+  <script>
+    document.querySelectorAll(".faq > div").forEach(elm => elm.addEventListener("click", (evt) => {
+      let element = evt.target;
+      while (element && element.tagName.toLowerCase() != "div") {
+        element = element.parentElement;
+      }
+      element.classList.toggle("expand");
+    }));
+  </script>
+ 
