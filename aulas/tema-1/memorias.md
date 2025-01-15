@@ -4,7 +4,10 @@ title: "Memórias (data source virtual)"
 aula: true
 tema: "Comunicação"
 post_index: 1.3
+
+# Configurações de publicação
 published: true
+estreia: '2025-01-01 10:00 GMT-3'
 ---
 
 ## Resumo da aula

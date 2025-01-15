@@ -4,7 +4,10 @@ title: "Fontes de dados (data sources)"
 aula: true
 tema: "Comunicação"
 post_index: 1.1
+
+# Configurações de publicação
 published: true
+estreia: '2025-01-01 10:00 GMT-3'
 ---
 
 ## Resumo da aula

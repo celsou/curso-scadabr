@@ -4,7 +4,10 @@ title: "Visualização de informações - parte 2"
 aula: true
 tema: "Comunicação"
 post_index: 1.5
+
+# Configurações de publicação
 published: true
+estreia: '2025-01-18 10:00 GMT-3'
 ---
 
 ## Resumo da aula

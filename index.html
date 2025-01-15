@@ -30,7 +30,7 @@ title: Home
       {% if page.aula == true %}
         <tr>
           <td>Aula {{page.post_index}}</td>
-          <td><a href="{{page.url | relative_url}}">{{page.title}}</a></td>
+          <td class="class-url" data-premiere-date="{{page.estreia}}" ><a href="{{page.url | relative_url}}">{{page.title}}</a></td>
           <td>{{page.tema}}</td>
         </tr>
       {% endif %}
@@ -88,6 +88,7 @@ title: Home
   <br>
 
   <script>
+    // FAQ drop-down
     document.querySelectorAll(".faq > div").forEach(elm => elm.addEventListener("click", (evt) => {
       let element = evt.target;
       while (element && element.tagName.toLowerCase() != "div") {
@@ -95,5 +96,31 @@ title: Home
       }
       element.classList.toggle("expand");
     }));
+
+    document.querySelectorAll("td.class-url").forEach(elm => {
+      let premiereData = elm.getAttribute("data-premiere-date");
+      if (!premiereData) return;
+      
+      let today = new Date();
+      let premiere = new Date(premiereData);
+      
+      if (premiere.getTime() > today.getTime()) {
+        let plainText = document.createElement("span");
+        plainText.innerText = elm.children[0].innerText;
+        elm.children[0].replaceWith(plainText);
+
+        let warning = document.createElement("sup");
+        warning.style = "font-size: 0.6rem; color: red;";
+        warning.innerText = " ESTREIA " + tz(premiere.getDate()) + "/" + tz(premiere.getMonth(), true);
+        elm.appendChild(warning);
+      }
+    });
+
+    function tz(num, add_1) {
+      let numeric = add_1 ? num + 1: num;
+      let str = numeric > 9 ? numeric.toString() : `0${numeric}`;
+      
+      return str;
+    }
   </script>
  

@@ -4,7 +4,10 @@ title: "Hierarquia de data points"
 aula: true
 tema: "Comunicação"
 post_index: 1.6
+
+# Configurações de publicação
 published: true
+estreia: '2025-01-25 10:00 GMT-3'
 ---
 
 ## Resumo da aula

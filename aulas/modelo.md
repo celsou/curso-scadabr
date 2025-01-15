@@ -4,7 +4,10 @@ title: Modelo de aula
 aula: true
 tema: "Comunicação"
 post_index: 0.3
+
+# Configurações de publicação
 published: false
+estreia: '2025-01-01 10:00 GMT-3'
 ---
 
 ## Resumo da aula

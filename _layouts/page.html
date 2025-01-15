@@ -9,8 +9,14 @@ layout: default
     <h1 class="page-title">{{ page.title }}</h1>
   {% endif %}
   <a style="font-size: 0.8rem;" href="{{ site.baseurl }}/#lista-de-aulas">Voltar à página principal</a>
+  
+  <div id="premiere-warning" style="display: none;" class="message" data-premiere-date="{{page.estreia}}">
+    <p style="font-size: 0.9rem;"><b style="color: #d31515">AVISO:</b> Esta aula está agendada mas ainda não estreou. O conteúdo completo da aula estará disponível em: <b>{{page.estreia}}</b></p>
+  </div>
 
-  {{ content }}
+  <main id="class-content">
+    {{ content }}
+  </main>
 </div>
 
 <div class="pagination">
@@ -35,3 +41,18 @@ layout: default
   {% endfor %}
   
 </div>
+
+<script>
+  let premiereWarning = document.getElementById("premiere-warning")
+  let premiereData = premiereWarning.getAttribute("data-premiere-date");
+  
+  if (!!premiereData) {    
+    let today = new Date();
+    let premiere = new Date(premiereData);
+        
+    if (premiere.getTime() > today.getTime()) {
+      premiereWarning.style.display = "";      
+      document.getElementById("class-content").style = "-moz-filter: blur(6px); -webkit-filter: blur(6px); filter: blur(6px); pointer-events: none; max-height: 250px; overflow: hidden;"
+    }
+  }
+</script>

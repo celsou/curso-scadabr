@@ -4,7 +4,10 @@ title: Apresentação do Curso ScadaBR 1.2
 aula: true
 tema: "Introdução"
 post_index: 0.1
+
+# Configurações de publicação
 published: true
+estreia: '2025-01-01 10:00 GMT-3'
 ---
 
 ## Resumo da aula
