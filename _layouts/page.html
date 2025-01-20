@@ -48,7 +48,7 @@ layout: default
   
   if (!!premiereData) {    
     let today = new Date();
-    let premiere = new Date(premiereData);
+    let premiere = new Date(premiereData.replace(" GMT-3", "-03"));
         
     if (premiere.getTime() > today.getTime()) {
       premiereWarning.style.display = "";      

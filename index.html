@@ -102,7 +102,7 @@ title: Home
       if (!premiereData) return;
       
       let today = new Date();
-      let premiere = new Date(premiereData);
+      let premiere = new Date(premiereData.replace(" GMT-3", "-03"));
       
       if (premiere.getTime() > today.getTime()) {
         let plainText = document.createElement("span");
