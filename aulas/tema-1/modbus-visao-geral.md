@@ -28,7 +28,7 @@ estreia: '2025-02-01 10:00 GMT-3'
 ## Conteúdo da aula (vídeo)
 
 <div class="iframe-container ratio-16_9">
-	<iframe src="https://youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<iframe src="https://youtube.com/embed/nsRhVmXctcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <br>
