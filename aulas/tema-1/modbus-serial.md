@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Modbus: visão geral"
+title: "Modbus Serial"
 aula: true
 tema: "Comunicação"
 post_index: 1.8
