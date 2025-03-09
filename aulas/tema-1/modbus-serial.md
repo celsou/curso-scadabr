@@ -12,7 +12,7 @@ estreia: '2025-03-01 10:00 GMT-3'
 
 ## Resumo da aula
 <div class="message">
-	
+	Nesta aula veremos o passo a passo de como configurar uma comunicação Modbus Serial no ScadaBR.
 	<br><br>
 	Tópicos abordados:
 	<ul>
