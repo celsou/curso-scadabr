@@ -35,4 +35,5 @@ estreia: '2025-03-01 10:00 GMT-3'
 ## Material complementar
 <ul>		
 	<li><a href="https://forum.scadabr.com.br/t/funcoes-modbus-suportadas-no-scadabr/5159" target="_blank">Detalhes adicionais sobre Modbus no ScadaBR (Fórum ScadaBR)</a></li>
+	<li><a href="https://youtu.be/8W2c5f4fNkU" target="_blank">Como utilizar Modbus Serial em um Arduino (vídeo)</a></li>
 </ul>
