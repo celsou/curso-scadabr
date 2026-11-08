@@ -6,7 +6,7 @@ tema: "Eventos"
 post_index: 2.4
 
 # Configurações de publicação
-published: false
+published: true
 estreia: '2026-11-10 19:00 GMT-3'
 ---
 
